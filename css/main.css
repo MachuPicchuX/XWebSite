@@ -1,0 +1,381 @@
+html {
+    scroll-behavior: smooth;
+}  
+
+@font-face {
+    font-family: FiraBold;
+    src: url(../fonts/FiraSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: FiraMedium;
+    src: url(../fonts/FiraSans-Medium.ttf);
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    margin-top: 20px;
+    background-color: #00d0ff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #47191b;
+    text-align: center;
+    padding: 10px 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-family: 'FiraBold';
+    font-size: 20px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    color: #198299;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    border: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #47191b;
+    background-color: #ffd08e;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.home{
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00d0ff;;
+}
+
+.home .homeinfo{
+    width: 900px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #00d0ff;
+}
+
+.home .hometext{
+    width: 60%;
+    height: 100%;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    background-color: #00d0ff;
+}
+
+.home .hometext img{
+    width: 70%;
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+.home .hometext a{
+    color: rgb(0, 0, 0);
+    font-family: "FiraMedium";
+    float: left;
+    text-align: left;
+}
+
+.home .hometext .btn1{
+    padding: 12px 14px;
+    margin-top: 40px;
+    margin-right: 20px;
+    font-size: 18px;
+    border: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #47191b;
+    background-color: #ffd08e;
+    font-family: 'FiraBold';
+    color: #47191b;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.home .btn1:hover{
+    background-color: #d67c4b;
+    border-color: white;
+    color: white;
+}
+
+.home .hometext .btn2{
+    padding: 12px 14px;
+    margin-top: 40px;
+    font-size: 18px;
+    border: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #47191b;
+    background-color: #00d0ff;
+    font-family: 'FiraBold';
+    color: #47191b;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.home .btn2:hover{
+    background-color: #d67c4b;
+    border-color: white;
+    color: white;
+}
+
+.home .homelogo{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    float: right;
+    align-items: center;
+    justify-content: right;
+    background-color: #00d0ff;
+}
+
+.home .homelogo img{
+    width: 70%;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+/* TEAM */
+
+.team{
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    background-color: #00d0ff;
+    display: inline-block;
+    justify-content: center;
+}
+
+
+.team .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: #ffd08e;
+    border: solid;
+    border-width: 3px;
+    border-radius: 15px;
+    border-color: #47191b;
+    padding: 20px;
+}
+
+.team .card:hover{
+    border-color: #ffffff;
+}
+
+.team .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+  
+.team .title {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+  }
+  
+  
+.team a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+.team .teamlogo{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.team .teamlogo img{
+    width: 100%;
+}
+
+/* TOKENOMICS */
+
+.tokenomics{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+
+.tokenomics .tokenomicslogo{
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.tokenomics img{
+    width: 100%;
+}
+
+/* VISION */
+
+.vision{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+
+.vision .visionlogo{
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.vision img{
+    width: 100%;
+}
+
+/* LAUNCH */
+
+.launch{
+    width: 100%;
+    height: 100%;
+    background-color: #00d0ff;
+}
+
+.launch .launchlogo{
+    width: 13%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.launch img{
+    width: 100%;
+}
+
+.launch .launchtext{
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    font-family: "FiraMedium";
+}
+
+.launch .launchtext .timer{
+    font-size: 30px;
+    text-align: center;
+    font-family: "FiraBold";
+    border: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #47191b;
+    color: #47191b;
+    background-color: #ffd08e;
+    padding: 10px 0px;
+    width: 35%;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.launch .launchtext .btn3{
+    padding: 12px 14px;
+    margin-top: 40px;
+    margin-right: 20px;
+    font-size: 18px;
+    border: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #47191b;
+    background-color: #b3b3b3;
+    font-family: 'FiraBold';
+    color: #47191b;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.launch .launchtext .btn4{
+    padding: 12px 14px;
+    margin-top: 40px;
+    margin-right: 20px;
+    font-size: 18px;
+    border: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #47191b;
+    background-color: #00d0ff;
+    font-family: 'FiraBold';
+    color: #47191b;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.launch .btn4:hover{
+    background-color: #d67c4b;
+    border-color: white;
+    color: white;
+}
+
+/* ROADMAP */
+
+.roadmap{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+
+.roadmap .roadmaplogo{
+    width: 17%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.roadmap img{
+    width: 100%;
+}
+
+/* FAQ */
+
+.faq{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+
+.faq .faqlogo{
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.faq img{
+    width: 100%;
+}
