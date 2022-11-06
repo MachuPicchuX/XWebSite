@@ -5,6 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/main.css">
+<script src="java/main.js"></script>
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -116,10 +117,97 @@ var x = setInterval(function() {
 
 <div class="roadmap" id="roadmap">
     <div class="roadmaplogo"><img src="assets/roadmaplogo.png"></div>
+    <div class="timeline">
+      <div class="progress"></div>
+      <div class="container left">
+        <div class="content" style="background-color: #b3b3b3;">
+          <h2>November 2022</h2>
+          <p style="text-decoration: line-through;">Launching a project on the stock exchange</p>
+          <p style="text-decoration: line-through;">Launching a project on the stock exchange</p>
+          <p style="text-decoration: line-through;">Launching a project on the stock exchange</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>December 2022</h2>
+          <p style="text-decoration: line-through;">Launching a project on the stock exchange</p>
+          <p>Launching a project on the stock exchange</p>
+          <p>Launching a project on the stock exchange</p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2>January 2022</h2>
+          <p>Launching a project on the stock exchange</p>
+          <p>Launching a project on the stock exchange</p>
+          <p>Launching a project on the stock exchange</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>February 2022</h2>
+          <p>Launching a project on the stock exchange</p>
+          <p>Launching a project on the stock exchange</p>
+          <p>Launching a project on the stock exchange</p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2>March 2022</h2>
+          <p>Launching a project on the stock exchange</p>
+          <p>Launching a project on the stock exchange</p>
+          <p>Launching a project on the stock exchange</p>
+        </div>
+      </div>
+    </div>
 </div>
 
 <div class="faq" id="faq">
     <div class="faqlogo"><img src="assets/faqlogo.png"></div>
+    <div class="faqtext">
+        <button class="collapsible">When will your token be listed on the exchange?</button>
+  <div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+  <button class="collapsible">When will your token be listed on the exchange?</button>
+  <div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+  <button class="collapsible">When will your token be listed on the exchange?</button>
+  <div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+  <button class="collapsible">When will your token be listed on the exchange?</button>
+  <div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+  <button class="collapsible">When will your token be listed on the exchange?</button>
+  <div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+    </div>
+</div>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+</script>
+
+<div class="contact" id="contact">
+    <div class="contactinfo">
+      <img src="assets/header3.png">
+    </div>
 </div>
 
 </body>
